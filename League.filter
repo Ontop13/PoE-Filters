@@ -21,9 +21,7 @@ Show
     SetBackgroundColor 255 255 255
     SetBorderColor 136 136 255
     SetFontSize 35
-    PlayAlertSound 10 125
     DisableDropSound
-    MinimapIcon 2 Blue Star
 
 Show
     Class "Stackable Currency"
@@ -97,37 +95,45 @@ Show
 Show
     Class "Stackable Currency"
     BaseType "Fusing" "Regret" "Gemcutter's Prism" "Chisel" "Blessed" "Regal Orb" "Vaal Orb" "Chaos Orb" "Scouring" "Treasure Key" "Stacked Deck" "Orb of Alchemy" "Exalted Shard" "Bestiary Orb"
-    SetBorderColor 208 32 144 # Uncommon currency
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 255 215 0
+    SetBorderColor 0 0 0 255 # Uncommon currency
     SetFontSize 43
     PlayAlertSound 3 300
-    DisableDropSound True
+    DisableDropSound
     MinimapIcon 2 Green Star
     PlayEffect Green
 
 Show
     Class "Stackable Currency"
     BaseType "Orb of Annulment"
-    SetBorderColor 0 0 255 # Uncommon currency
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 30 144 255
+    SetBorderColor 0 0 0 255 # Uncommon currency
     SetFontSize 43
     PlayAlertSound ShGeneral 300
-    DisableDropSound True
+    DisableDropSound
     MinimapIcon 2 Blue Star
     PlayEffect Blue
 
 Show
     Class "Stackable Currency"
     BaseType "Journeyman Cartographer's Sextant" "Master Cartographer's Sextant" "Apprentice Cartographer's Sextant"
-    SetBorderColor 255 165 0
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 255 165 0 255
+    SetBorderColor 0 0 0 255
     SetFontSize 43
     PlayAlertSound 15 300
-    DisableDropSound True
+    DisableDropSound
     MinimapIcon 2 Yellow Star
     PlayEffect Yellow
 
 Show
     Class "Map Fragments"
     BaseType "Scarab"
-    SetBorderColor 27 162 155
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 0 128 0 255
+    SetBorderColor 0 0 0 255
     SetFontSize 43
     PlayAlertSound 15 300
     DisableDropSound
@@ -137,21 +143,25 @@ Show
 Show
     Class "Stackable Currency"
     BaseType "Rusted Breach Scarab" "Polished Breach Scarab" "Gilded Breach Scarab" "Rusted Cartography Scarab" "Polished Cartography Scarab" "Gilded Cartography Scarab" "Rusted Reliquary Scarab" "Polished Reliquary Scarab" "Gilded Reliquary Scarab" "Rusted Bestiary Scarab" "Polished Bestiary Scarab" "Gilded Bestiary Scarab" "Rusted Shaper Scarab" "Polished Shaper Scarab" "Gilded Shaper Scarab" "Rusted Elder Scarab" "Polished Elder Scarab" "Gilded Elder Scarab" "Rusted Sulphite Scarab" "Polished Sulphite Scarab" "Gilded Sulphite Scarab" "Rusted Divination Scarab" "Polished Divination Scarab" "Gilded Divination Scarab" "Rusted Torment Scarab" "Polished Torment Scarab" "Gilded Torment Scarab" "Rusted Ambush Scarab" "Polished Ambush Scarab" "Gilded Ambush Scarab" "Rusted Harbinger Scarab" "Polished Harbinger Scarab" "Gilded Harbinger Scarab" "Rusted Perandus Scarab" "Polished Perandus Scarab" "Gilded Perandus Scarab"
-    SetBorderColor 27 162 155
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 0 128 0 255
+    SetBorderColor 0 0 0 255
     SetFontSize 43
     PlayAlertSound 15 300
-    DisableDropSound True
+    DisableDropSound
     MinimapIcon 2 Green Star
     PlayEffect Green
 
 Show
     Class "Stackable Currency"
     BaseType "Divine Orb"
-    SetBorderColor 255 165 0
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 255 165 0 255
+    SetBorderColor 0 0 0 255
     SetFontSize 43
-    PlayAlertSound ShDivine 300
-    DisableDropSound True
-    MinimapIcon 1 Yellow Star
+    PlayAlertSound 15 300
+    DisableDropSound
+    MinimapIcon 2 Yellow Star
     PlayEffect Yellow
 
 # High currency
@@ -205,92 +215,108 @@ Show
 Show
     Class "Stackable Currency"
     BaseType "Jeweller's Orb"
-    SetBackgroundColor 0 0 0
-    SetBorderColor 170 158 130
-    SetFontSize 43
-    DisableDropSound True
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 27 162 155
+    SetBorderColor 0 0 0 255
+    SetFontSize 40
+    DisableDropSound
 
 Show
     Class "Stackable Currency"
     BaseType "Orb of Binding" "Orb of Horizons"
-    SetBackgroundColor 0 0 0
-    SetBorderColor 0 128 0
-    SetFontSize 42
-    DisableDropSound True
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 27 162 155
+    SetBorderColor 0 0 0 255
+    SetFontSize 40
+    DisableDropSound
 
 Show
     Class "Stackable Currency"
     BaseType "Orb of Chance"
-    SetBackgroundColor 0 0 0
-    SetBorderColor 255 255 255
-    SetFontSize 42
-    DisableDropSound True
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 27 162 155
+    SetBorderColor 0 0 0 255
+    SetFontSize 40
+    DisableDropSound
 
 Show
     Class "Stackable Currency"
     BaseType "Orb of Alteration"
-    SetBackgroundColor 0 0 0
-    SetBorderColor 255 255 255
-    SetFontSize 42
-    DisableDropSound True
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 27 162 155
+    SetBorderColor 0 0 0 255
+    SetFontSize 40
+    DisableDropSound
 
 Show
     Class "Stackable Currency"
     BaseType "Chromatic Orb"
-    SetBackgroundColor 0 0 0
-    SetBorderColor 0 128 0
-    SetFontSize 42
-    DisableDropSound True
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 27 162 155
+    SetBorderColor 0 0 0 255
+    SetFontSize 40
+    DisableDropSound
 
 Show
     Class "Stackable Currency"
     BaseType "Glassblower's Bauble"
-    SetBackgroundColor 0 0 0
-    SetBorderColor 0 128 0
-    SetFontSize 42
-    DisableDropSound True
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 27 162 155
+    SetBorderColor 0 0 0 255
+    SetFontSize 40
+    DisableDropSound
 
 Show
     Class "Stackable Currency"
     BaseType "Orb of Transmutation"
-    SetBackgroundColor 0 0 0
-    SetBorderColor 0 128 0
-    SetFontSize 42
-    DisableDropSound True
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 27 162 155
+    SetBorderColor 0 0 0 255
+    SetFontSize 40
+    DisableDropSound
 
 Show
     Class "Stackable Currency"
     BaseType "Orb of Augmentation"
-    SetBackgroundColor 0 0 0
-    SetBorderColor 0 128 0
-    SetFontSize 42
+    SetTextColor 0 0 0 255
+    SetBackgroundColor 27 162 155
+    SetBorderColor 0 0 0 255
+    SetFontSize 40
     DisableDropSound
 
 Show
     Class "Stackable Currency"
     BaseType "Blacksmith's Whetstone"
+    SetTextColor 136 136 255
+    SetBackgroundColor 255 255 255
     SetBorderColor 136 136 255
-    SetFontSize 37
+    SetFontSize 35
     DisableDropSound
 
 Show
     Class "Stackable Currency"
     BaseType "Armourer's Scrap"
+    SetTextColor 136 136 255
+    SetBackgroundColor 255 255 255
     SetBorderColor 136 136 255
-    SetFontSize 37
+    SetFontSize 35
     DisableDropSound
 
 Show
     Class "Stackable Currency"
     BaseType "Portal Scroll"
-    SetBorderColor 136 136 255
+    SetTextColor 54 100 146
+    SetBackgroundColor 184 218 242
+    SetBorderColor 54 100 146
     SetFontSize 37
     DisableDropSound
 
 Show
     Class "Stackable Currency"
     BaseType "Scroll of Wisdom"
-    SetBorderColor 136 136 255
+    SetTextColor 54 100 146
+    SetBackgroundColor 184 218 242
+    SetBorderColor 54 100 146
     SetFontSize 37
     DisableDropSound
 
@@ -414,7 +440,7 @@ Show
     SetTextColor 74 0 160 200
     SetBackgroundColor 255 255 255
     SetBorderColor 74 0 160 200
-    SetFontSize 38
+    SetFontSize 40
 
 Show
     MapTier >= 16
@@ -534,7 +560,8 @@ Show
 
 Show
     Class "Quest"
-    SetFontSize 42
+    SetBorderColor 50 230 100
+    SetFontSize 44
     MinimapIcon 1 Green Square
     PlayEffect Green
 
@@ -547,8 +574,9 @@ Show
     BaseType "Quicksilver Flask"
     SetTextColor 184 218 242
     SetBorderColor 184 218 242
-    SetFontSize 40
+    SetFontSize 42
     PlayAlertSound 1 300
+    MinimapIcon 0 White Star
 
 Show
     ItemLevel <= 75
@@ -1265,7 +1293,7 @@ Show
     Sockets = 6
     SetTextColor 255 255 255
     SetBackgroundColor 0 0 0 # Contrast background
-    SetBorderColor 127 127 127 # 6S/5L/6L border
+    SetBorderColor 255 255 255 # 6S/5L/6L border
     SetFontSize 45
     PlayAlertSound 2 300
     MinimapIcon 2 Green Star
@@ -1333,6 +1361,15 @@ Show
     SetBorderColor 74 230 58
     SetFontSize 40
     PlayAlertSound 7 79
+    MinimapIcon 2 Green Square
+
+Show
+    LinkedSockets = 2
+    SocketGroup "GG"
+    ItemLevel <= 15
+    SetBackgroundColor 0 0 0
+    SetBorderColor 74 230 58
+    SetFontSize 40
     MinimapIcon 2 Green Square
 
 Show
@@ -2690,7 +2727,7 @@ Show
     SetTextColor 255 200 0
     SetBackgroundColor 0 0 0
     SetBorderColor 30 144 255
-    SetFontSize 30
+    SetFontSize 34
 
 Show
     ItemLevel >= 69
@@ -2699,7 +2736,7 @@ Show
     SetTextColor 255 200 0
     SetBackgroundColor 0 0 0
     SetBorderColor 208 32 144
-    SetFontSize 30
+    SetFontSize 34
 
 Show
     ItemLevel >= 69
@@ -2708,7 +2745,7 @@ Show
     SetTextColor 255 200 0
     SetBackgroundColor 0 0 0
     SetBorderColor 74 230 58
-    SetFontSize 30
+    SetFontSize 34
 
 Show
     ItemLevel >= 69
@@ -2716,8 +2753,8 @@ Show
     Class "Gloves"
     SetTextColor 255 200 0
     SetBackgroundColor 0 0 0
-    SetBorderColor 231 180 120
-    SetFontSize 30
+    SetBorderColor 136 136 255
+    SetFontSize 34
 
 # 10.6) Armor Shields
 
@@ -2935,7 +2972,7 @@ Show
     SetTextColor 255 200 0
     SetBackgroundColor 0 0 0
     SetBorderColor 255 0 0
-    SetFontSize 33
+    SetFontSize 35
 
 Hide
     ItemLevel >= 70
@@ -3326,9 +3363,20 @@ Hide
 # 17) A1
 
 Show
+    Height = 3
+    Width = 1
     ItemLevel < 15
     Rarity = Magic
-    Class "Rings" "Amulets" "Gloves" "Boots" "Helmets" "One Hand"
+    SetTextColor 0 0 0
+    SetBackgroundColor 30 144 255
+    SetBorderColor 0 0 0
+    SetFontSize 35
+
+Show
+    Height = 2
+    Width = 2
+    ItemLevel < 15
+    Rarity = Magic
     SetTextColor 0 0 0
     SetBackgroundColor 30 144 255
     SetBorderColor 0 0 0
@@ -3348,6 +3396,16 @@ Show
     ItemLevel < 20
     Class "Rings"
     BaseType "Iron Ring"
+    SetTextColor 0 0 0
+    SetBackgroundColor 255 255 255
+    SetBorderColor 0 0 0
+    SetFontSize 35
+    MinimapIcon 2 White Square
+
+Show
+    ItemLevel < 20
+    Class "Belts"
+    BaseType "Rustic Sash"
     SetTextColor 0 0 0
     SetBackgroundColor 255 255 255
     SetBorderColor 0 0 0
