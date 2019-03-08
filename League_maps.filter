@@ -3,53 +3,53 @@
 
 # Leveling currency
 
-Show
-    Class "Stackable Currency"
-    BaseType "Blacksmith's Whetstone"
-    SetTextColor 136 136 255
-    SetBackgroundColor 255 255 255
-    SetBorderColor 136 136 255
-    SetFontSize 35
-    PlayAlertSound 10 125
-    DisableDropSound
-    MinimapIcon 2 Blue Star
+#Show
+#    Class "Stackable Currency"
+#    BaseType "Blacksmith's Whetstone"
+#    SetTextColor 136 136 255
+#    SetBackgroundColor 255 255 255
+#    SetBorderColor 136 136 255
+#    SetFontSize 35
+#    PlayAlertSound 10 125
+#    DisableDropSound
+#    MinimapIcon 2 Blue Star
 
-Show
-    Class "Stackable Currency"
-    BaseType "Armourer's Scrap"
-    SetTextColor 136 136 255
-    SetBackgroundColor 255 255 255
-    SetBorderColor 136 136 255
-    SetFontSize 35
-    DisableDropSound
+#Show
+#    Class "Stackable Currency"
+#    BaseType "Armourer's Scrap"
+#    SetTextColor 136 136 255
+#    SetBackgroundColor 255 255 255
+#    SetBorderColor 136 136 255
+#    SetFontSize 35
+#    DisableDropSound
 
-Show
-    Class "Stackable Currency"
-    BaseType "Portal Scroll"
-    SetTextColor 54 100 146
-    SetBackgroundColor 184 218 242
-    SetBorderColor 54 100 146
-    SetFontSize 37
-    DisableDropSound
+#Show
+#    Class "Stackable Currency"
+#    BaseType "Portal Scroll"
+#    SetTextColor 54 100 146
+#    SetBackgroundColor 184 218 242
+#    SetBorderColor 54 100 146
+#    SetFontSize 37
+#    DisableDropSound
 
-Show
-    Class "Stackable Currency"
-    BaseType "Scroll of Wisdom"
-    SetTextColor 54 100 146
-    SetBackgroundColor 184 218 242
-    SetBorderColor 54 100 146
-    SetFontSize 37
-    DisableDropSound
+#Show
+#    Class "Stackable Currency"
+#    BaseType "Scroll of Wisdom"
+#    SetTextColor 54 100 146
+#    SetBackgroundColor 184 218 242
+#    SetBorderColor 54 100 146
+#    SetFontSize 37
+#    DisableDropSound
 
-Show
-    Class "Stackable Currency"
-    BaseType "Orb of Transmutation" "Orb of Alteration" "Orb of Augmentation" "Orb of Chance" "Jeweller's Orb" "Chromatic Orb" "Glassblower's Bauble"
-    SetTextColor 0 0 0 255
-    SetBackgroundColor 27 162 155
-    SetBorderColor 0 0 0 255
-    SetFontSize 40
-    DisableDropSound
-    MinimapIcon 1 Green Star
+#Show
+#    Class "Stackable Currency"
+#    BaseType "Orb of Transmutation" "Orb of Alteration" "Orb of Augmentation" "Orb of Chance" "Jeweller's Orb" "Chromatic Orb" "Glassblower's Bauble"
+#    SetTextColor 0 0 0 255
+#    SetBackgroundColor 27 162 155
+#    SetBorderColor 0 0 0 255
+#    SetFontSize 40
+#    DisableDropSound
+#    MinimapIcon 1 Green Star
 
 # 0) Currency
 
@@ -284,7 +284,7 @@ Show
     SetFontSize 40
     DisableDropSound
 
-Show
+Hide
     Class "Stackable Currency"
     BaseType "Blacksmith's Whetstone"
     SetTextColor 136 136 255
@@ -293,7 +293,7 @@ Show
     SetFontSize 35
     DisableDropSound
 
-Show
+Hide
     Class "Stackable Currency"
     BaseType "Armourer's Scrap"
     SetTextColor 136 136 255
@@ -311,7 +311,7 @@ Show
     SetFontSize 37
     DisableDropSound
 
-Show
+Hide
     Class "Stackable Currency"
     BaseType "Scroll of Wisdom"
     SetTextColor 54 100 146
@@ -1057,19 +1057,19 @@ Show
 
 # 6.8) Essence
 
-Show
+Hide
     Class "Stackable Currency"
     BaseType "Whispering"
     SetBorderColor 161 245 185 # Talisman
     SetFontSize 31
 
-Show
+Hide
     Class "Stackable Currency"
     BaseType "Muttering"
     SetBorderColor 161 245 185 # Talisman
     SetFontSize 36
 
-Show
+Hide
     Class "Stackable Currency"
     BaseType "Weeping"
     SetBorderColor 161 245 185 # Talisman
@@ -1113,6 +1113,14 @@ Show
     MinimapIcon 0 Blue Star
 
 # 6.9) Delve
+
+Show
+    Class "Currency"
+    BaseType "Dense Fossil" "Pristine Fossil" "Prismatic Fossil" "Aetheric Fossil" "Enchanted Fossil"
+    SetBorderColor 255 165 0 # Uncommon currency
+    SetFontSize 43
+    PlayAlertSound 3 300
+    MinimapIcon 1 Green Star
 
 Show
     Class "Currency"
@@ -1274,14 +1282,14 @@ Show
     SetFontSize 40
     MinimapIcon 2 Green Hexagon
 
-Show
+Hide
     Class "Divination"
     BaseType "Boundless Realms" "Rain Tempter" "Dying Anguish" "The Fox" "The Incantation" "The Lich" "The Scarred Meadow" "The Siren" "The Sun" "Thunderous Skies" "Turn the Other Cheek" "The Carrion Crow" "The Inoculated" "The King's Blade" "Lantador's Lost Love" "The Lord in Black" "The Metalsmith's Gift" "The Surgeon" "Cartographer's Delight" "The Lunaris Priestess" "The Opulent" "The Ruthless Ceinture" "Lover" "The Calling" "The Scholar" "A Mother's Parting Gift" "Anarchy's Price" "The Betrayal" "Birth of the Three" "The Conduit" "Death" "The Feast" "The Hermit" "The Pact" "Tranquillity" "The Rabid Rhoa" "The Web" "The Oath" "Forbidden Power" "The Army of Blood" "Fathomless Depths" "The Wolf's Shadow" "Call to the First Ones" "The Witch" "The Gambler" "The Puzzle" "Lysah's Respite"
     SetTextColor 0 0 0 # TEXTCOLOR: Cosmetic: Black Text
     SetBackgroundColor 175 215 230 180 # BACKGROUND: T5 Divination
     SetBorderColor 0 0 0 # BORDERCOLOR: Cosmetic: Neutral Highlight
     SetFontSize 32
-    DisableDropSound True
+    DisableDropSound
 
 Show
     Class "Divination Card"
@@ -2597,6 +2605,23 @@ Show
 # 10) Rare Irems
 
 Show
+    ItemLevel >= 84
+    Rarity = Rare
+    Class "Body Armours"
+    BaseType "Vaal Regalia"
+    SetTextColor 255 215 0
+    SetBorderColor 136 136 255
+    SetFontSize 35
+
+Show
+    Rarity = Rare
+    Class "Body Armours"
+    BaseType "Vaal Regalia"
+    SetTextColor 255 215 0
+    SetBorderColor 255 215 0
+    SetFontSize 35
+
+Show
     ItemLevel <= 70
     Rarity = Rare
     Class "Body Armours"
@@ -2768,7 +2793,7 @@ Show
     ItemLevel <= 81
     Rarity = Rare
     Class "Boots"
-    BaseType "Vaal Greaves" "Goliath Greaves" "Stealth Boots" "Shagreen Boots" "Wyrmscale Boots" "Murder Boots" "Crusader Boots" "Dragonscale Boots"
+    BaseType "Vaal Greaves" "Goliath Greaves" "Stealth Boots" "Shagreen Boots" "Wyrmscale Boots" "Murder Boots" "Crusader Boots" "Dragonscale Boots" "Arcanist Slippers" "Conjurer Boots"
     SetTextColor 255 215 0
     SetBorderColor 255 215 0
     SetFontSize 35
@@ -2786,7 +2811,7 @@ Show
     ItemLevel <= 81
     Rarity = Rare
     Class "Gloves"
-    BaseType "Vaal Gauntlets" "Goliath Gauntlets" "Ancient Gauntlets" "Stealth Gloves" "Shagreen Gloves" "Sharkskin Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts"
+    BaseType "Vaal Gauntlets" "Goliath Gauntlets" "Ancient Gauntlets" "Stealth Gloves" "Shagreen Gloves" "Sharkskin Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Arcanist Gloves" "Conjurer Gloves"
     SetTextColor 255 215 0
     SetBorderColor 255 215 0
     SetFontSize 35
@@ -2797,7 +2822,7 @@ Show
     ItemLevel <= 81
     Rarity = Rare
     Class "Helmets"
-    BaseType "Ezomyte Burgonet" "Samite Helmet" "Sinner Tricorne" "Silken Hood" "Ursine Pelt"
+    BaseType "Ezomyte Burgonet" "Samite Helmet" "Sinner Tricorne" "Silken Hood" "Ursine Pelt" "Mind Cage" "Solaris Circlet"
     SetTextColor 255 215 0
     SetBorderColor 255 215 0
     SetFontSize 35
@@ -2812,7 +2837,7 @@ Show
     SetBorderColor 255 215 0
     SetFontSize 35
 
-Show
+Hide
     ItemLevel >= 69
     Rarity = Rare
     Class "Body Armours"
@@ -2821,7 +2846,7 @@ Show
     SetBorderColor 30 144 255
     SetFontSize 30
 
-Show
+Hide
     ItemLevel >= 69
     Rarity = Rare
     Class "Helmets"
@@ -2830,7 +2855,7 @@ Show
     SetBorderColor 208 32 144
     SetFontSize 30
 
-Show
+Hide
     ItemLevel >= 69
     Rarity = Rare
     Class "Boots"
@@ -2839,7 +2864,7 @@ Show
     SetBorderColor 74 230 58
     SetFontSize 30
 
-Show
+Hide
     ItemLevel >= 69
     Rarity = Rare
     Class "Gloves"
@@ -2883,7 +2908,7 @@ Show
 Show
     Rarity = Rare
     Class "Shields"
-    BaseType "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield"
+    BaseType "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Thorium Spirit Shield" "Vaal Spirit Shield"
     SetTextColor 255 215 0
     SetBorderColor 184 218 242
     SetFontSize 35
@@ -3056,7 +3081,7 @@ Show
     SetBorderColor 255 215 0
     SetFontSize 35
 
-Show
+Hide
     Height = 3
     Width = 1
     ItemLevel >= 69
@@ -3076,7 +3101,7 @@ Hide
 
 # 10.20) Jewelery
 
-Show
+Hide
     ItemLevel >= 60
     Rarity = Rare
     Class "Rings"
@@ -3114,7 +3139,17 @@ Show
     ItemLevel >= 60
     Rarity = Rare
     Class "Belts"
-    BaseType "Chain Belt" "Cloth Belt" "Studded Belt" "Heavy Belt" "Leather Belt" "Rustic Sash"
+    BaseType "Heavy Belt" "Leather Belt" "Rustic Sash"
+    SetTextColor 255 200 0
+    SetBackgroundColor 0 0 0
+    SetBorderColor 0 128 0
+    SetFontSize 35
+
+Hide
+    ItemLevel >= 60
+    Rarity = Rare
+    Class "Belts"
+    BaseType "Chain Belt" "Cloth Belt" "Studded Belt"
     SetTextColor 255 200 0
     SetBackgroundColor 0 0 0
     SetBorderColor 0 128 0
@@ -3166,7 +3201,7 @@ Show
     SetBorderColor 54 100 146 # Valuable/quality gems
     SetFontSize 39
 
-Show
+Hide
     Quality > 5
     Class "Gem"
     SetBorderColor 54 100 146 # Valuable/quality gems
@@ -3192,19 +3227,19 @@ Show
     SetBorderColor 150 0 0 # Vaal gems
     SetFontSize 38
 
-Show
-    Class "Support Skill Gems"
-    BaseType "Poison Support" "Cast when Damage Taken Support" "Immortal Call" "Curse On Hit Support" "Added Lightning Damage Support" "Greater Multiple Projectiles Support" "Scourge Arrow" "Elemental Damage with Attacks Support" "Ice Bite Support"
-    SetBorderColor 27 162 155
-    SetFontSize 43
-    PlayAlertSound 9 225
-    MinimapIcon 1 Green Circle
+#Show
+#    Class "Support Skill Gems"
+#    BaseType "Poison Support" "Cast when Damage Taken Support" "Immortal Call" "Curse On Hit Support" "Added Lightning Damage Support" "Greater Multiple Projectiles Support" "Scourge Arrow" "Elemental Damage with Attacks Support" "Ice Bite Support"
+#    SetBorderColor 27 162 155
+#    SetFontSize 43
+#    PlayAlertSound 9 225
+#    MinimapIcon 1 Green Circle
 
-Show
+Hide
     Class "Active"
     SetFontSize 35
 
-Show
+Hide
     Class "Support Skill Gems"
     SetFontSize 35
 
