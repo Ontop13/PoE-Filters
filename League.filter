@@ -3,53 +3,53 @@
 
 # Leveling currency
 
-Show
-    Class "Stackable Currency"
-    BaseType "Blacksmith's Whetstone"
-    SetTextColor 136 136 255
-    SetBackgroundColor 255 255 255
-    SetBorderColor 136 136 255
-    SetFontSize 35
-    PlayAlertSound 10 125
-    DisableDropSound
-    MinimapIcon 2 Blue Star
+#Show
+#    Class "Stackable Currency"
+#    BaseType "Blacksmith's Whetstone"
+#    SetTextColor 136 136 255
+#    SetBackgroundColor 255 255 255
+#    SetBorderColor 136 136 255
+#    SetFontSize 35
+#    PlayAlertSound 10 125
+#    DisableDropSound
+#    MinimapIcon 2 Blue Star
 
-Show
-    Class "Stackable Currency"
-    BaseType "Armourer's Scrap"
-    SetTextColor 136 136 255
-    SetBackgroundColor 255 255 255
-    SetBorderColor 136 136 255
-    SetFontSize 35
-    DisableDropSound
+#Show
+#    Class "Stackable Currency"
+#    BaseType "Armourer's Scrap"
+#    SetTextColor 136 136 255
+#    SetBackgroundColor 255 255 255
+#    SetBorderColor 136 136 255
+#    SetFontSize 35
+#    DisableDropSound
 
-Show
-    Class "Stackable Currency"
-    BaseType "Portal Scroll"
-    SetTextColor 54 100 146
-    SetBackgroundColor 184 218 242
-    SetBorderColor 54 100 146
-    SetFontSize 37
-    DisableDropSound
+#Show
+#    Class "Stackable Currency"
+#    BaseType "Portal Scroll"
+#    SetTextColor 54 100 146
+#    SetBackgroundColor 184 218 242
+#    SetBorderColor 54 100 146
+#    SetFontSize 37
+#    DisableDropSound
 
-Show
-    Class "Stackable Currency"
-    BaseType "Scroll of Wisdom"
-    SetTextColor 54 100 146
-    SetBackgroundColor 184 218 242
-    SetBorderColor 54 100 146
-    SetFontSize 37
-    DisableDropSound
+#Show
+#    Class "Stackable Currency"
+#    BaseType "Scroll of Wisdom"
+#    SetTextColor 54 100 146
+#    SetBackgroundColor 184 218 242
+#    SetBorderColor 54 100 146
+#    SetFontSize 37
+#    DisableDropSound
 
-Show
-    Class "Stackable Currency"
-    BaseType "Orb of Transmutation" "Orb of Alteration" "Orb of Augmentation" "Orb of Chance" "Jeweller's Orb" "Chromatic Orb" "Glassblower's Bauble"
-    SetTextColor 0 0 0 255
-    SetBackgroundColor 27 162 155
-    SetBorderColor 0 0 0 255
-    SetFontSize 40
-    DisableDropSound
-    MinimapIcon 1 Green Star
+#Show
+#    Class "Stackable Currency"
+#    BaseType "Orb of Transmutation" "Orb of Alteration" "Orb of Augmentation" "Orb of Chance" "Jeweller's Orb" "Chromatic Orb" "Glassblower's Bauble"
+#    SetTextColor 0 0 0 255
+#    SetBackgroundColor 27 162 155
+#    SetBorderColor 0 0 0 255
+#    SetFontSize 40
+#    DisableDropSound
+#    MinimapIcon 1 Green Star
 
 # 0) Currency
 
@@ -284,7 +284,7 @@ Show
     SetFontSize 40
     DisableDropSound
 
-Show
+Hide
     Class "Stackable Currency"
     BaseType "Blacksmith's Whetstone"
     SetTextColor 136 136 255
@@ -293,7 +293,7 @@ Show
     SetFontSize 35
     DisableDropSound
 
-Show
+Hide
     Class "Stackable Currency"
     BaseType "Armourer's Scrap"
     SetTextColor 136 136 255
@@ -311,7 +311,7 @@ Show
     SetFontSize 37
     DisableDropSound
 
-Show
+Hide
     Class "Stackable Currency"
     BaseType "Scroll of Wisdom"
     SetTextColor 54 100 146
@@ -1057,19 +1057,19 @@ Show
 
 # 6.8) Essence
 
-Show
+Hide
     Class "Stackable Currency"
     BaseType "Whispering"
     SetBorderColor 161 245 185 # Talisman
     SetFontSize 31
 
-Show
+Hide
     Class "Stackable Currency"
     BaseType "Muttering"
     SetBorderColor 161 245 185 # Talisman
     SetFontSize 36
 
-Show
+Hide
     Class "Stackable Currency"
     BaseType "Weeping"
     SetBorderColor 161 245 185 # Talisman
@@ -1113,6 +1113,14 @@ Show
     MinimapIcon 0 Blue Star
 
 # 6.9) Delve
+
+Show
+    Class "Currency"
+    BaseType "Dense Fossil" "Pristine Fossil" "Prismatic Fossil" "Aetheric Fossil" "Enchanted Fossil"
+    SetBorderColor 255 165 0 # Uncommon currency
+    SetFontSize 43
+    PlayAlertSound 3 300
+    MinimapIcon 1 Green Star
 
 Show
     Class "Currency"
@@ -1178,8 +1186,16 @@ Show
 
 # synt item
 Show
-    SynthesisedItem True
     FracturedItem True
+    SetTextColor 50 230 100
+    SetBorderColor 50 230 100
+    SetFontSize 42
+    PlayAlertSound 7 200
+    MinimapIcon 2 Red Circle
+
+# synt item
+Show
+    SynthesisedItem True
     SetTextColor 50 230 100
     SetBorderColor 50 230 100
     SetFontSize 42
@@ -1206,18 +1222,6 @@ Show
     SetFontSize 40
     MinimapIcon 2 Green Hexagon
 
-# xz tier
-Show
-    Class "Divination"
-    BaseType "The Seeker" "The Mad King" "Boon of Justice" "Arrogance of the Vaal" "The Golden Era" "Alone in the Darkness"
-    SetTextColor 0 0 255 # TEXTCOLOR: Cosmetic: Black Text
-    SetBackgroundColor 255 255 119 # BACKGROUND: T1 Global High Value Drop
-    SetBorderColor 210 0 0 # BORDERCOLOR: Crafting: T1
-    SetFontSize 45
-    PlayAlertSound 6 300
-    MinimapIcon 0 Green Hexagon
-    PlayEffect White
-
 Show
     Class "Divination"
     BaseType "Abandoned Wealth" "The Immortal" "The Artist" "The Dragon's Heart" "Wealth and Power" "The Devastator" "Hunter's Reward" "The King's Heart" "The Last One Standing" "The Spark and the Flame" "The Thaumaturgist" "The Queen" "The Dreamer" "The World Eater" "Pride Before the Fall" "Immortal Resolve" "The Master" "The Mayor" "The Samurai's Eye" "The Celestial Stone" "Beauty Through Death" "Boon of the First Ones" "Mawr Blaidd" "The Nurse" "The Nurse" "Seven Years Bad Luck"
@@ -1240,7 +1244,7 @@ Hide
 
 Show
     Class "Divination"
-    BaseType "The Cartographer" "Lucky Deck" "The Encroaching Darkness" "Last Hope" "The Brittle Emperor" "The Formless Sea" "Glimmer of Hope" "Humility" "The Hunger" "The Offering" "The Polymath" "The Soul" "The Vast" "The Valkyrie" "Bowyer's Dream" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "Emperor of Purity" "The Ethereal" "The Void" "Scholar of the Seas" "The Wolf" "Left to Fate" "No Traces" "The Wolven King's Bite" "The Throne" "Vinia's Token" "Lucky Connections" "The Inventor" "The Body" "The Risk" "The Union" "The Survivalist" "Three Faces in the Dark" "Jack in the Box" "The Porcupine" "The Valley of Steel Boxes" "The Enlightened" "Loyalty" "The Fletcher" "The Standoff" "The Breach" "The Obscured" "Blessing of God" "Lingering Remnants" "The Wretched" "The Trial" "The Admirer" "The Trial" "The Beast" "The Darkest Dream" "The Dreamland" "The Jeweller's Boon" "The Professor" "The Undaunted" "The Hale Heart" "The Undisputed" "Rebirth" "Heterochromia" "The Wilted Rose" "The Cacophony" "The Innocent" "The Price of Protection" "The Twilight Moon" "The Endless Darkness" "Treasure Hunter" "Perfection" "A Dab of Ink" "The Sacrifice" "The Wind" "Sambodhi's Vow" "The Journey" "The Messenger" "The Landing" "Monochrome" "The Lord of Celebration"
+    BaseType "The Cartographer" "Lucky Deck" "The Encroaching Darkness" "Last Hope" "The Brittle Emperor" "The Formless Sea" "Glimmer of Hope" "Humility" "The Hunger" "The Offering" "The Polymath" "The Soul" "The Vast" "The Valkyrie" "Bowyer's Dream" "The Celestial Justicar" "The Chains that Bind" "The Dapper Prodigy" "The Dark Mage" "Emperor of Purity" "The Ethereal" "The Void" "Scholar of the Seas" "The Wolf" "Left to Fate" "No Traces" "The Wolven King's Bite" "The Throne" "Vinia's Token" "Lucky Connections" "The Inventor" "The Body" "The Risk" "The Union" "The Survivalist" "Three Faces in the Dark" "Jack in the Box" "The Porcupine" "The Valley of Steel Boxes" "The Enlightened" "Loyalty" "The Fletcher" "The Standoff" "The Breach" "The Obscured" "Blessing of God" "Lingering Remnants" "The Wretched" "The Trial" "The Admirer" "The Trial" "The Beast" "The Darkest Dream" "The Dreamland" "The Jeweller's Boon" "The Professor" "The Undaunted" "The Hale Heart" "The Undisputed" "Rebirth" "Heterochromia" "The Wilted Rose" "The Cacophony" "The Innocent" "The Price of Protection" "The Twilight Moon" "The Endless Darkness" "Treasure Hunter" "Perfection" "A Dab of Ink" "The Sacrifice" "The Wind" "Sambodhi's Vow" "The Journey" "The Messenger" "The Landing" "Monochrome" "The Lord of Celebration" "Arrogance of the Vaal" "The Seeker" "The Mad King" "Alone in the Darkness"
     SetTextColor 0 0 255 # TEXTCOLOR: Cosmetic: Black Text
     SetBackgroundColor 255 255 255 # BACKGROUND: T1 Global High Value Drop
     SetBorderColor 0 0 255 # BORDERCOLOR: Cosmetic: T1 and T2 Divination
@@ -1269,19 +1273,19 @@ Show
 
 Show
     Class "Divination Card"
-    BaseType "The Flora's Gift" "Emperor's Luck" "The Gemcutter" "The Cataclysm" "Coveted Possession" "The Arena Champion" "The Explorer" "Lost Worlds" "The Surveyor" "The Doppelganger" "Gemcutter's Promise" "Gift of the Gemling Queen" "Grave Knowledge" "The Summoner" "Volatile Power" "The Aesthete" "Assassin's Favour" "Audacity" "The Avenger" "The Battle Born" "Blind Venture" "The Cursed King" "The Demoness" "Doedre's Madness" "The Dragon" "The Drunken Aristocrat" "Earth Drinker" "The Forsaken" "The Gentleman" "The Gladiator" "The Harvester" "Hope" "Hubris" "Hunter's Resolve" "The Lion" "The Mercenary" "The One With All" "The Pack Leader" "The Penitent" "The Poet" "Rats" "The Scavenger" "Time-Lost Relic" "The Tower" "The Traitor" "The Watcher" "The Wolf's Shadow" "Destined to Crumble" "The Jester" "Merciless Armament" "Prosperity" "The Road to Power" "Shard of Fate" "The Sigil" "The Spoiled Prince" "The Twins" "The Tyrant" "The Warden" "The Warlord" "The Catalyst" "Garish Power" "The Endurance" "Dialla's Subjugation" "The Visionary" "The Wolverine" "Atziri's Arsenal" "Struck by Lightning" "Mitts" "The Coming Storm" "Light and Truth" "Might is Right" "The Blazing Fire" "The Eye of the Dragon" "The Deceiver" "The Insatiable" "The Sword King's Salute" "Her Mask" "The Realm" "The Cataclysm" "The Stormcaller" "The Rite of Elements" "Dark Temptation"
+    BaseType "The Flora's Gift" "Emperor's Luck" "The Gemcutter" "The Cataclysm" "Coveted Possession" "The Arena Champion" "The Explorer" "Lost Worlds" "The Surveyor" "The Doppelganger" "Gemcutter's Promise" "Gift of the Gemling Queen" "Grave Knowledge" "The Summoner" "Volatile Power" "The Aesthete" "Assassin's Favour" "Audacity" "The Avenger" "The Battle Born" "Blind Venture" "The Cursed King" "The Demoness" "Doedre's Madness" "The Dragon" "The Drunken Aristocrat" "Earth Drinker" "The Forsaken" "The Gentleman" "The Gladiator" "The Harvester" "Hope" "Hubris" "Hunter's Resolve" "The Lion" "The Mercenary" "The One With All" "The Pack Leader" "The Penitent" "The Poet" "Rats" "The Scavenger" "Time-Lost Relic" "The Tower" "The Traitor" "The Watcher" "The Wolf's Shadow" "Destined to Crumble" "The Jester" "Merciless Armament" "Prosperity" "The Road to Power" "Shard of Fate" "The Sigil" "The Spoiled Prince" "The Twins" "The Tyrant" "The Warden" "The Warlord" "The Catalyst" "Garish Power" "The Endurance" "Dialla's Subjugation" "The Visionary" "The Wolverine" "Atziri's Arsenal" "Struck by Lightning" "Mitts" "The Coming Storm" "Light and Truth" "Might is Right" "The Blazing Fire" "The Eye of the Dragon" "The Deceiver" "The Insatiable" "The Sword King's Salute" "Her Mask" "The Realm" "The Cataclysm" "The Stormcaller" "The Rite of Elements" "Dark Temptation" "The Golden Era"
     SetBorderColor 150 0 0 # Special drops
     SetFontSize 40
     MinimapIcon 2 Green Hexagon
 
 Show
     Class "Divination"
-    BaseType "Boundless Realms" "Rain Tempter" "Dying Anguish" "The Fox" "The Incantation" "The Lich" "The Scarred Meadow" "The Siren" "The Sun" "Thunderous Skies" "Turn the Other Cheek" "The Carrion Crow" "The Inoculated" "The King's Blade" "Lantador's Lost Love" "The Lord in Black" "The Metalsmith's Gift" "The Surgeon" "Cartographer's Delight" "The Lunaris Priestess" "The Opulent" "The Ruthless Ceinture" "Lover" "The Calling" "The Scholar" "A Mother's Parting Gift" "Anarchy's Price" "The Betrayal" "Birth of the Three" "The Conduit" "Death" "The Feast" "The Hermit" "The Pact" "Tranquillity" "The Rabid Rhoa" "The Web" "The Oath" "Forbidden Power" "The Army of Blood" "Fathomless Depths" "The Wolf's Shadow" "Call to the First Ones" "The Witch" "The Gambler" "The Puzzle" "Lysah's Respite"
+    BaseType "Boundless Realms" "Rain Tempter" "Dying Anguish" "The Fox" "The Incantation" "The Lich" "The Scarred Meadow" "The Siren" "The Sun" "Thunderous Skies" "Turn the Other Cheek" "The Carrion Crow" "The Inoculated" "The King's Blade" "Lantador's Lost Love" "The Lord in Black" "The Metalsmith's Gift" "The Surgeon" "Cartographer's Delight" "The Lunaris Priestess" "The Opulent" "The Ruthless Ceinture" "Lover" "The Calling" "The Scholar" "A Mother's Parting Gift" "Anarchy's Price" "The Betrayal" "Birth of the Three" "The Conduit" "Death" "The Feast" "The Hermit" "The Pact" "Tranquillity" "The Rabid Rhoa" "The Web" "The Oath" "Forbidden Power" "The Army of Blood" "Fathomless Depths" "The Wolf's Shadow" "Call to the First Ones" "The Witch" "The Gambler" "The Puzzle" "Lysah's Respite" "Boon of Justice"
     SetTextColor 0 0 0 # TEXTCOLOR: Cosmetic: Black Text
     SetBackgroundColor 175 215 230 180 # BACKGROUND: T5 Divination
     SetBorderColor 0 0 0 # BORDERCOLOR: Cosmetic: Neutral Highlight
     SetFontSize 32
-    DisableDropSound True
+    DisableDropSound
 
 Show
     Class "Divination Card"
@@ -2597,6 +2601,23 @@ Show
 # 10) Rare Irems
 
 Show
+    ItemLevel >= 84
+    Rarity = Rare
+    Class "Body Armours"
+    BaseType "Vaal Regalia"
+    SetTextColor 255 215 0
+    SetBorderColor 136 136 255
+    SetFontSize 35
+
+Show
+    Rarity = Rare
+    Class "Body Armours"
+    BaseType "Vaal Regalia"
+    SetTextColor 255 215 0
+    SetBorderColor 255 215 0
+    SetFontSize 35
+
+Show
     ItemLevel <= 70
     Rarity = Rare
     Class "Body Armours"
@@ -2768,7 +2789,7 @@ Show
     ItemLevel <= 81
     Rarity = Rare
     Class "Boots"
-    BaseType "Vaal Greaves" "Goliath Greaves" "Stealth Boots" "Shagreen Boots" "Wyrmscale Boots" "Murder Boots" "Crusader Boots" "Dragonscale Boots"
+    BaseType "Vaal Greaves" "Goliath Greaves" "Stealth Boots" "Shagreen Boots" "Wyrmscale Boots" "Murder Boots" "Crusader Boots" "Dragonscale Boots" "Arcanist Slippers" "Conjurer Boots"
     SetTextColor 255 215 0
     SetBorderColor 255 215 0
     SetFontSize 35
@@ -2786,7 +2807,7 @@ Show
     ItemLevel <= 81
     Rarity = Rare
     Class "Gloves"
-    BaseType "Vaal Gauntlets" "Goliath Gauntlets" "Ancient Gauntlets" "Stealth Gloves" "Shagreen Gloves" "Sharkskin Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts"
+    BaseType "Vaal Gauntlets" "Goliath Gauntlets" "Ancient Gauntlets" "Stealth Gloves" "Shagreen Gloves" "Sharkskin Gloves" "Dragonscale Gauntlets" "Crusader Gloves" "Murder Mitts" "Arcanist Gloves" "Conjurer Gloves"
     SetTextColor 255 215 0
     SetBorderColor 255 215 0
     SetFontSize 35
@@ -2797,14 +2818,14 @@ Show
     ItemLevel <= 81
     Rarity = Rare
     Class "Helmets"
-    BaseType "Ezomyte Burgonet" "Samite Helmet" "Sinner Tricorne" "Silken Hood" "Ursine Pelt"
+    BaseType "Ezomyte Burgonet" "Samite Helmet" "Sinner Tricorne" "Silken Hood" "Ursine Pelt" "Mind Cage" "Solaris Circlet"
     SetTextColor 255 215 0
     SetBorderColor 255 215 0
     SetFontSize 35
 
 # 10.5) =Armor Hider=
 
-Show
+Hide
     ItemLevel <= 68
     Rarity = Rare
     Class "Gloves" "Helmets" "Boots"
@@ -2812,7 +2833,7 @@ Show
     SetBorderColor 255 215 0
     SetFontSize 35
 
-Show
+Hide
     ItemLevel >= 69
     Rarity = Rare
     Class "Body Armours"
@@ -2821,7 +2842,7 @@ Show
     SetBorderColor 30 144 255
     SetFontSize 30
 
-Show
+Hide
     ItemLevel >= 69
     Rarity = Rare
     Class "Helmets"
@@ -2830,7 +2851,7 @@ Show
     SetBorderColor 208 32 144
     SetFontSize 30
 
-Show
+Hide
     ItemLevel >= 69
     Rarity = Rare
     Class "Boots"
@@ -2839,7 +2860,7 @@ Show
     SetBorderColor 74 230 58
     SetFontSize 30
 
-Show
+Hide
     ItemLevel >= 69
     Rarity = Rare
     Class "Gloves"
@@ -2883,7 +2904,7 @@ Show
 Show
     Rarity = Rare
     Class "Shields"
-    BaseType "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield"
+    BaseType "Fossilised Spirit Shield" "Harmonic Spirit Shield" "Titanium Spirit Shield" "Thorium Spirit Shield" "Vaal Spirit Shield"
     SetTextColor 255 215 0
     SetBorderColor 184 218 242
     SetFontSize 35
@@ -2953,13 +2974,13 @@ Show
     SetBorderColor 184 218 242
     SetFontSize 35
 
-Show
-    Rarity = Rare
-    Class "Wands"
-    BaseType "Imbued Wand" "Engraved Wand" "Carved Wand"
-    SetTextColor 255 215 0
-    SetBorderColor 50 230 100
-    SetFontSize 35
+#Show
+#    Rarity = Rare
+#    Class "Wands"
+#    BaseType "Imbued Wand" "Engraved Wand" "Carved Wand"
+#    SetTextColor 255 215 0
+#    SetBorderColor 50 230 100
+#    SetFontSize 35
 
 Show
     Rarity = Rare
@@ -2990,13 +3011,13 @@ Show
 
 # 10.14) 1H Axe
 
-Show
-    Rarity = Rare
-    Class "One Hand Axes"
-    BaseType "Siege Axe"
-    SetTextColor 255 215 0
-    SetBorderColor 255 165 0
-    SetFontSize 35
+#Show
+#    Rarity = Rare
+#    Class "One Hand Axes"
+#    BaseType "Siege Axe"
+#    SetTextColor 255 215 0
+#    SetBorderColor 255 165 0
+#    SetFontSize 35
 
 # 10.15) 2H Axe
 
@@ -3010,13 +3031,13 @@ Show
 
 # 10.16) Bow
 
-Show
-    Rarity = Rare
-    Class "Bows"
-    BaseType "Harbinger Bow" "Imperial Bow" "Thicket Bow"
-    SetTextColor 255 215 0
-    SetBorderColor 255 215 0
-    SetFontSize 35
+#Show
+#    Rarity = Rare
+#    Class "Bows"
+#    BaseType "Harbinger Bow" "Imperial Bow" "Thicket Bow"
+#    SetTextColor 255 215 0
+#    SetBorderColor 255 215 0
+#    SetFontSize 35
 
 # 10.17) Swords
 
@@ -3056,7 +3077,7 @@ Show
     SetBorderColor 255 215 0
     SetFontSize 35
 
-Show
+Hide
     Height = 3
     Width = 1
     ItemLevel >= 69
@@ -3192,19 +3213,19 @@ Show
     SetBorderColor 150 0 0 # Vaal gems
     SetFontSize 38
 
-Show
-    Class "Support Skill Gems"
-    BaseType "Poison Support" "Cast when Damage Taken Support" "Immortal Call" "Curse On Hit Support" "Added Lightning Damage Support" "Greater Multiple Projectiles Support" "Scourge Arrow" "Elemental Damage with Attacks Support" "Ice Bite Support"
-    SetBorderColor 27 162 155
-    SetFontSize 43
-    PlayAlertSound 9 225
-    MinimapIcon 1 Green Circle
+#Show
+#    Class "Support Skill Gems"
+#    BaseType "Poison Support" "Cast when Damage Taken Support" "Immortal Call" "Curse On Hit Support" "Added Lightning Damage Support" "Greater Multiple Projectiles Support" "Scourge Arrow" "Elemental Damage with Attacks Support" "Ice Bite Support"
+#    SetBorderColor 27 162 155
+#    SetFontSize 43
+#    PlayAlertSound 9 225
+#    MinimapIcon 1 Green Circle
 
-Show
+Hide
     Class "Active"
     SetFontSize 35
 
-Show
+Hide
     Class "Support Skill Gems"
     SetFontSize 35
 
